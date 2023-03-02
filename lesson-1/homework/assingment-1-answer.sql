@@ -1,8 +1,10 @@
+DROP DATABASE lesson_01;
+
 -- create new database
-CREATE DATABASE lession_01;
+CREATE DATABASE lesson_01;
 
 -- use database collection
-USE lession_01;
+USE lesson_01;
 
 -- create table 'department'
 CREATE TABLE department (
