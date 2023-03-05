@@ -33,3 +33,21 @@ WHERE duration > 60 AND created_date < '2019-12-20';
 -- Question 11
 SELECT * FROM `account`
 WHERE full_name LIKE 'D%o';
+
+SELECT * FROM `account`
+WHERE SUBSTRING_INDEX(full_name, ' ',-1) LIKE 'D%o';
+
+-- Question 12
+DELETE
+FROM exam
+WHERE created_date < '2019-12-20';
+
+-- Question 13
+DELETE
+FROM question
+WHERE SUBSTRING_INDEX(content, ' ',2) = 'Câu hỏi';
+
+-- Question 15
+UPDATE `group_account`
+SET group_id = 4
+WHERE account_id = 5;
