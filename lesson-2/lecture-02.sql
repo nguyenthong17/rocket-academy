@@ -201,6 +201,8 @@ VALUES                          ('Java'       ),
 -- Thêm dữ liệu vào bảng question
 INSERT INTO question    (content          , category_id, type_id, creator_id, created_date)
 VALUES                  ('Câu hỏi về Java', 1          , 1      , 1         , '2020-04-05'),
+						('Câu hỏi về Java', 1          , 1      , 1         , '2020-04-05'),
+						('Câu hỏi về Java', 1          , 1      , 1         , '2020-04-05'),
                         ('Câu Hỏi về PHP' , 10         , 2      , 2         , '2020-04-05'),
                         ('Hỏi về C#'      , 9          , 2      , 3         , '2020-04-06'),
                         ('Hỏi về Ruby'    , 6          , 1      , 4         , '2020-04-06'),

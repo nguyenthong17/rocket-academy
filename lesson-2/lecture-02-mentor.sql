@@ -189,6 +189,7 @@ VALUES              ('Testing System'   , 5         , '2019-03-05'),
 INSERT INTO group_account   (group_id, account_id, joined_date )
 VALUES                      (1       , 1         , '2019-03-05'),
                             (2       , 2         , '2020-03-07'),
+							(2       , 3         , '2020-03-07'),
                             (3       , 3         , '2020-03-09'),
                             (4       , 4         , '2020-03-10'),
                             (5       , 5         , '2020-03-28'),
