@@ -22,13 +22,17 @@ WHERE group_counts =
     
 -- Question 3
 CREATE OR REPLACE VIEW question_03 AS
-SELECT *
-FROM question
-WHERE CHAR_LENGTH(content) >= 300;
+	SELECT *
+	FROM question
+	WHERE CHAR_LENGTH(content) >= 300;
 
--- DELETE 
--- FROM question
--- WHERE question_id IN (SELECT question_id FROM question_03);
+WITH long_question AS (
+	SELECT question_id FROM question_03
+)
+DELETE 
+FROM question
+WHERE question_id IN (SELECT * FROM long_question);
+
 
 -- Question 4
 CREATE OR REPLACE VIEW question_04 AS
