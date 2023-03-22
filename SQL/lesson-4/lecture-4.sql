@@ -28,3 +28,39 @@ VALUES           (1 , 'Thương'  ),
                  (2 , 'Ngọc Anh'),
                  (5 , 'Trang'   ),
                  (6 , 'Linh'    );
+
+-- JOIN
+
+-- RIGHT/ LEFT JOIN
+SELECT * FROM boy
+LEFT JOIN girl USING (id);
+
+SELECT * FROM boy
+RIGHT JOIN girl USING (id);
+
+-- LEFT EXCLUDING
+SELECT * FROM boy
+LEFT JOIN girl USING (id)
+WHERE girl.id IS NULL;
+
+-- CROSS JOIN
+SELECT * FROM boy
+CROSS JOIN girl;
+
+-- UNION
+SELECT id, `name` FROM boy;
+SELECT id, `name` FROM girl;
+
+SELECT id, `name` FROM boy
+UNION
+SELECT id,`name` FROM girl;
+
+-- UNION ALL
+SELECT id, `name` FROM boy
+UNION ALL
+SELECT id,`name` FROM girl;
+
+-- UNION ALL
+SELECT id, `name` FROM boy
+
+SELECT id,`name` FROM girl;
